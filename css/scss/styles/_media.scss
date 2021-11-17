@@ -1,0 +1,48 @@
+img,
+video,
+audio,
+object {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    iframe, embed, object {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+}
+
+// background image classes
+//position
+.bgi-center {
+    background-position: center;
+}
+.bgi-top {
+    background-position: center top;
+}
+.bgi-bottom {
+    background-position: center bottom;
+}
+//repeat
+.bgi-no-repeat {
+    background-repeat: no-repeat;
+}
+// size
+.bgi-cover {
+    background-size: cover;
+}
+.bgi-contain {
+    background-size: contain;
+}
+// fixed
+.bgi-fixed {
+    background-attachment: fixed;
+}

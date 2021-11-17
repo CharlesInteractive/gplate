@@ -1,0 +1,43 @@
+//**
+// Project Settings
+//**
+
+// Consistent settings
+$system-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; // System fonts
+
+$heading-font: cubano, sans-serif;
+$display-font:  rift-soft, sans-serif;
+$copy-font: proxima-nova, sans-serif;
+
+// Responsive breakpoints
+$mobi-break: 550px;
+$tab-break: 850px;
+$mon-break: 1200px;
+
+// Site wrappers 
+$wrapper: 1100px;
+$mid-wrapper: 900px;
+$small-wrapper: 700px;
+
+// Color Pallette
+$blue: #056cab;
+$teal: #145252;
+$green: #208000;
+$red: #990000;
+$gray-light: #e0e0e0;
+$white: #ffffff;
+$black: #0d0d0d;
+$gray: #595959;
+
+// Project color variables
+$primary-color: $blue;
+$secondary-color: $teal;
+$tertiary-color: $green;
+$subtertiary-color: $red;
+
+//site functions
+$danger-color: $red; // Bad color for errors, validation etc.
+$success-color: $green; // Good color for success etc.
+$info-color: $blue; // Good color for success etc.
+$warning-color: $red; // Good color for success etc.
+$subtle-color: $gray; // Subtle color for subtle text

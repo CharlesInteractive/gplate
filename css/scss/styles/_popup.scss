@@ -1,0 +1,7 @@
+// extra styles for popup
+#pops {
+    transform: scale(0.8);
+}
+.popup_visible #pops {
+    transform: scale(1);
+}

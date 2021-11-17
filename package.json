@@ -1,0 +1,44 @@
+{
+    "name": "gplate",
+    "version": "1.0.0",
+    "description": "gplate",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Charles Carroll",
+    "license": "MIT",
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "devDependencies": {
+        "autoprefixer": "^9.8.8",
+        "grunt": "^1.3.0",
+        "grunt-contrib-jshint": "^3.0.0",
+        "grunt-contrib-sass": "^2.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-postcss": "^0.9.0",
+        "grunt-sass": "^3.1.0",
+        "grunt-terser": "^2.0.0",
+        "load-grunt-tasks": "^5.1.0",
+        "node-sass": "^6.0.1"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.4",
+        "@fortawesome/free-brands-svg-icons": "^5.15.4",
+        "grunt-contrib-connect": "^3.0.0",
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-handlebars": "^3.0.0",
+        "grunt-open": "^0.2.4",
+        "handlebars": "^4.7.7",
+        "jquery": "^3.6.0",
+        "jquery-popup-overlay": "^2.1.5",
+        "normalize-scss": "^7.0.1",
+        "pixrem": "^5.0.0",
+        "postcss": "^8.2.4",
+        "slick-carousel": "^1.8.1",
+        "terser": "^5.0.0",
+        "time-grunt": "^2.0.0"
+    }
+}

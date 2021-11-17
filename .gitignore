@@ -102,3 +102,14 @@ dist
 
 # TernJS port file
 .tern-port
+
+# dont need lock
+package-lock.json
+
+# minified stylesheets
+/css/main.css
+/css/main.css.map
+
+# minified js
+/js/min/*
+/js/templates/*

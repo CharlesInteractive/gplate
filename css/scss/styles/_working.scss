@@ -1,0 +1,125 @@
+// working styles to move someplace approriate when ready
+.rounded-sm {
+    border-radius: 10px;
+}
+.rounded-md {
+    border-radius: 20px;
+}
+.rounded-lg {
+    border-radius: 30px;
+}
+.rounded-full {
+    border-radius: 9999px;
+}
+
+.line-height-0 {
+    line-height: 0;
+}
+
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+}
+
+// font awesome icons
+.fa-helper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &:nth-child(7n+1) {
+        .h2 {
+            background-color: $blue;
+        }
+    }
+    &:nth-child(7n+2) {
+        .h2 {
+            background-color: $teal;
+        }
+    }
+    &:nth-child(7n+3) {
+        .h2 {
+            background-color: $green;
+        }
+    }
+    &:nth-child(7n+4) {
+        .h2 {
+            background-color: $red;
+        }
+    }
+    &:nth-child(7n+5) {
+        .h2 {
+            background-color: $black;
+        }
+    }
+    &:nth-child(7n+6) {
+        .h2 {
+            background-color: $gray;
+        }
+    }
+    &:nth-child(7n+7) {
+        .h2 {
+            background-color: $white;
+            color: $black;
+        }
+    }
+
+}
+@include responsive($mobi-break) {
+    .fa-helper i {
+        width: 20px;
+        height: 20px;
+        font-size: .65em;
+    }
+}
+
+// slick slider
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+.main-nav-helper {
+    z-index: 9999;
+}
+
+
+#mobinav_wrapper {
+    overflow: hidden !important;
+}
+#mobinav {
+    width: 100vw;
+    height: 100vh;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+#mobinav-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+@include responsive( $mobi-break ) {
+    .mobi-hide {
+        display: none;
+    }
+}
+@include mobilefirst( $mon-break ) {
+    .desktop-hide {
+        display: none;
+    }
+}
+@media screen and (min-width: 550px) and (max-width: 1200px) {
+    .tab-hide {
+        display: none;
+    }
+}

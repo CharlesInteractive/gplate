@@ -1,0 +1,44 @@
+// Reset default browser styles using Normalize
+@import "../../node_modules/normalize-scss/sass/_normalize.scss";
+
+// Install FontAwesome for useful icons
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+// Install imports styles
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+
+// Get all the fonts
+@import "base/fonts";
+
+// Set variables and create mixins
+@import "base/config";
+@import "base/mixins";
+
+// Structure of site
+@import "base/structure.scss";
+
+// Styles
+@import "styles/reset";
+@import "styles/type";
+
+@import "styles/backgrounds";
+@import "styles/buttons";
+@import "styles/alerts";
+@import "styles/tables";
+@import "styles/media";
+@import "styles/popup";
+@import "styles/forms";
+
+@import "styles/flexbox";
+@import "styles/padding";
+@import "styles/margins";
+@import "styles/height";
+@import "styles/width";
+@import "styles/positioning";
+
+@import "styles/print";
+
+@import "styles/working";
+
+

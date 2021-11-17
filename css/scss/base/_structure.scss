@@ -1,0 +1,90 @@
+.wrapper {
+    max-width: $wrapper;
+    width: 100%;
+    padding: 0 15px 0;
+    margin: 0 auto;
+}
+.wrapper-md {
+	max-width: $mid-wrapper;
+    width: 100%;
+    padding: 0 15px 0;
+    margin: 0 auto;
+}
+.wrapper-sm {
+	max-width: $small-wrapper;
+    width: 100%;
+    padding: 0 15px 0;
+    margin: 0 auto;
+}
+
+// flex col whatever
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	.flex-col {
+		flex: 1;
+	}
+	.flex-dub-col {
+		flex: 2;
+	}
+}
+// margined
+.flex-mg-row {
+	display: flex;
+	flex-direction: row;
+	.flex-mg-col {
+		flex: 1;
+		margin-left: 25px;
+	}
+	.flex-mg-dub-col {
+		flex: 2; 
+		margin-left: 25px;
+	}
+	.flex-mg-col:first-child,
+	.flex-mg-dub-col:first-child {
+		margin-left: 0;
+	}
+}
+
+@include responsive($mobi-break) {
+	.flex-mg-row,
+	.flex-row {
+		&.responsive-flex {
+			flex-direction: column;
+			.flex-mg-col {
+				margin-left: 0;
+                margin-bottom: 25px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+			}
+			.flex-mg-dub-col {
+				margin-left: 0;
+                margin-bottom: 25px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+			}
+		}
+	}
+}
+
+// wrapping columns
+
+$width: 100%;
+$margin: 2%; // Margin between the grid columns
+$maxcols: 12; // Max grid columns
+
+@for $i from 1 through $maxcols {
+    .flex-cols-#{$i} {
+		margin-left: -($margin);
+		flex-wrap: wrap;
+		.flex-col {
+			flex-basis: ($width / $i) - ($margin);
+			max-width: ($width / $i) - ($margin);
+			margin-left: $margin;
+			// max-width: ($unit * $i) + ($margin * ($i - 1));
+		}
+		
+    }
+}
