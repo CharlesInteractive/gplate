@@ -38,7 +38,7 @@ module.exports = function (grunt) {
                 expand: true,
                 flatten: true,
                 src: 'node_modules/@fortawesome/fontawesome-free/webfonts/*',
-                dest: 'fonts'
+                dest: 'webfonts'
             }
         },
 
