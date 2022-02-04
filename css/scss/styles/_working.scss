@@ -1,17 +1,4 @@
 // working styles to move someplace approriate when ready
-.rounded-sm {
-    border-radius: 10px;
-}
-.rounded-md {
-    border-radius: 20px;
-}
-.rounded-lg {
-    border-radius: 30px;
-}
-.rounded-full {
-    border-radius: 9999px;
-}
-
 .line-height-0 {
     line-height: 0;
 }
@@ -106,20 +93,4 @@
     position: absolute;
     top: 15px;
     right: 15px;
-}
-
-@include responsive( $mobi-break ) {
-    .mobi-hide {
-        display: none;
-    }
-}
-@include mobilefirst( $mon-break ) {
-    .desktop-hide {
-        display: none;
-    }
-}
-@media screen and (min-width: 550px) and (max-width: 1200px) {
-    .tab-hide {
-        display: none;
-    }
 }
