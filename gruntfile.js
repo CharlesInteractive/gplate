@@ -68,7 +68,8 @@ module.exports = function (grunt) {
                         'node_modules/handlebars/dist/handlebars.js',
                         'node_modules/jquery/dist/jquery.js',
                         'node_modules/slick-carousel/slick/slick.js',
-                        'node_modules/jquery-popup-overlay/jquery.popupoverlay.js'
+                        'node_modules/jquery-popup-overlay/jquery.popupoverlay.js',
+                        'node_modules/lozad/dist/lozad.js'
                     ],
                     'js/templates/template.js': [ 'handlebars/compiled/template.js' ],
                     'js/templates/template_secondary.js': [ 'handlebars/compiled/template_secondary.js' ],

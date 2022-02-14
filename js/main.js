@@ -29,7 +29,13 @@ function handlesFaicons() {
 }handlesFaicons();
 
 $(document).ready(function() {
-    //initialize popout
+
+    // get lozad to lazy load our images
+    const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+    observer.observe();
+    
+
+    // initialize popout
     var pops = $('#pops');
     pops.popup({
         escape: true,
