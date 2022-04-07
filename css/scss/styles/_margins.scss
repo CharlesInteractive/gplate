@@ -10,6 +10,9 @@
 .mg-xl {
     margin: 60px;
 }
+.mg-none {
+    margin: 0;
+}
 
 .mg-t-sm {
     margin-top: 15px;
@@ -22,6 +25,9 @@
 }
 .mg-t-xl {
     margin-top: 60px;
+}
+.mg-t-none {
+    margin-top: 0px;
 }
 
 .mg-b-sm {
@@ -36,6 +42,9 @@
 .mg-b-xl {
     margin-bottom: 60px;
 }
+.mg-b-none {
+    margin-bottom: 0px;
+}
 
 .mg-l-sm {
     margin-left: 15px;
@@ -49,6 +58,9 @@
 .mg-l-xl {
     margin-left: 60px;
 }
+.mg-l-none {
+    margin-left: 0px;
+}
 
 .mg-r-sm {
     margin-right: 15px;
@@ -61,6 +73,41 @@
 }
 .mg-r-xl {
     margin-right: 60px;
+}
+.mg-r-none {
+    margin-right: 0px;
+}
+
+.mg-y-sm {
+    margin: 0 15px;
+}
+.mg-y-md {
+    margin: 0 30px;
+}
+.mg-y-lg {
+    margin: 0 45px;
+}
+.mg-y-xl {
+    margin: 0 60px;
+}
+.mg-y-none {
+    margin: 0 0;
+}
+
+.mg-x-sm {
+    margin: 15px 0;
+}
+.mg-x-md {
+    margin: 30px 0;
+}
+.mg-x-lg {
+    margin: 45px 0;
+}
+.mg-x-xl {
+    margin: 60px 0;
+}
+.mg-x-none {
+    margin: 0 0;
 }
 
 .mg-center {
