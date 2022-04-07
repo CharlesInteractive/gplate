@@ -46,3 +46,25 @@ object {
 .bgi-fixed {
     background-attachment: fixed;
 }
+
+// enable rounded corners for iframes
+.video-wrapper.rounded-sm {
+    iframe, embed, object {
+        border-radius: 10px;
+    }
+}
+.video-wrapper.rounded-md {
+    iframe, embed, object {
+        border-radius: 20px;
+    }  
+}
+.video-wrapper.rounded-lg {
+    iframe, embed, object {
+        border-radius: 30px;
+    }
+}
+.video-wrapper.rounded-full {
+    iframe, embed, object {
+        border-radius: 9999px;
+    }
+}
