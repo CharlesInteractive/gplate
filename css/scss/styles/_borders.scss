@@ -11,6 +11,19 @@
     border-radius: 9999px;
 }
 
+.border-none {
+    border: none;
+}
+
 .border-easy {
     border: 1px solid $gray;
+}
+.border-heavy {
+    border: 2px solid $black;
+}
+
+@include responsive($tab-break) {
+    .tab-rounded-none {
+        border-radius: 0;
+    }
 }
