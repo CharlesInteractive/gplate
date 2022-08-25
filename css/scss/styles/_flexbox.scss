@@ -2,6 +2,9 @@
 .flex {
     display: flex;
 }
+.inline-flex {
+    display: inline-flex;
+}
 
 // Direction
 .flex-dir-row {
@@ -15,6 +18,34 @@
 }
 .flex-dir-col-rev {
     flex-direction: column-reverse;
+}
+@include responsive($tab-break) {
+    .md_flex-dir-row {
+        flex-direction: row;
+    }
+    .md_flex-dir-row-rev {
+        flex-direction: row-reverse;
+    }
+    .md_flex-dir-col {
+        flex-direction: column;
+    }
+    .md_flex-dir-col-rev {
+        flex-direction: column-reverse;
+    }
+}
+@include responsive($mobi-break) {
+    .sm_flex-dir-row {
+        flex-direction: row;
+    }
+    .sm_flex-dir-row-rev {
+        flex-direction: row-reverse;
+    }
+    .sm_flex-dir-col {
+        flex-direction: column;
+    }
+    .sm_flex-dir-col-rev {
+        flex-direction: column-reverse;
+    }
 }
 
 // Wrapping
@@ -83,12 +114,4 @@
 }
 .flex-6 {
     flex: 6;
-}
-
-
-.mycssclass {
-    color: red;
-    .myinnnerclass {
-        color: blue;
-    }
 }
