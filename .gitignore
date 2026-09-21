@@ -103,6 +103,179 @@ dist
 # TernJS port file
 .tern-port
 
-# dont need lock
-package-lock.json
+# =============================================================================
+# OS & SYSTEM GENERATED FILES
+# =============================================================================
 
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+ehthumbs.db
+ehthumbs_vista.db
+Thumbs.db
+Thumbs.db:encryptable
+desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+
+# =============================================================================
+# EDITORS & IDEs
+# =============================================================================
+
+# VS Code — commit extensions.json, ignore personal/local settings
+.vscode/*
+!.vscode/extensions.json
+.vscode/*.code-snippets
+.history/
+*.vsix
+
+# JetBrains (IntelliJ, PhpStorm, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+Session.vim
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+.emacs.desktop
+.emacs.desktop.lock
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Zed
+.zed/settings.json
+
+
+# =============================================================================
+# AI CODING ASSISTANTS
+# =============================================================================
+
+# --- Claude Code (Anthropic) ---
+# Commit:    CLAUDE.md, .claude/settings.json, .claude/commands/, .claude/rules/
+# Gitignore: local overrides and session state
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/todos/
+.claude/.last_session
+
+# --- GitHub Copilot ---
+# Commit: .github/copilot-instructions.md, .github/instructions/
+# Nothing typically gitignored; Copilot has no local state files
+
+# --- Cursor ---
+# Commit:    .cursor/rules/*.mdc
+# Gitignore: legacy rules file and local overrides
+.cursorrules
+.cursorignore
+.cursorindexingignore
+.cursor/mcp.json
+
+# --- Windsurf (Codeium) ---
+# Commit:    .windsurf/rules/
+# Gitignore: legacy file and local ignore
+.windsurfrules
+.codeiumignore
+
+# --- Gemini CLI (Google) ---
+GEMINI.local.md
+.geminiignore
+.aiexclude
+
+# --- OpenAI Codex CLI ---
+# AGENTS.md is typically committed; local overrides below
+AGENTS.local.md
+.codex/
+
+# --- Aider ---
+.aider*
+!.aiderignore
+.aider.tags.cache.v*/
+
+# --- Cline / Roo Code ---
+.clinerules.local
+.roo/mcp.json
+
+# --- Continue.dev ---
+.continue/config.local.json
+
+# --- General AI tool artifacts ---
+.aiignore
+*.ai-session
+.ai-context/
+
+
+# =============================================================================
+# DEPENDENCY DIRECTORIES
+# =============================================================================
+
+node_modules/
+.pnp/
+.pnp.js
+vendor/
+.bundle/
+
+
+# =============================================================================
+# BUILD OUTPUT & CACHES
+# =============================================================================
+
+dist/
+build/
+out/
+.output/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.turbo/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+
+# =============================================================================
+# ENVIRONMENT & SECRETS
+# =============================================================================
+
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+.secrets/
