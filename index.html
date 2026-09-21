@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Gplate</title>
+    <meta name="description" content="Gplate is a legacy front-end boilerplate showing how sites were built with Grunt, Sass, Handlebars, jQuery and Slick.">
     <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 
     <link rel="stylesheet" href="./css/main.css" type="text/css">
@@ -15,7 +16,7 @@
         <div class="fixed w-full flex justify-space-between bg-c-black p-t-sm p-b-sm p-l-md p-r-md main-nav-helper">
             <div class="wrapper flex justify-space-between bg-c-black pd-t-sm pd-b-sm">
                 <div class="logo">
-                    <a href="#"><i class="fab fa-grunt text-white h3"></i></a>
+                    <a href="#" aria-label="Gplate home"><i class="fab fa-grunt text-white h3" aria-hidden="true"></i></a>
                 </div>
                 <nav class="mobi-hide">
                     <ul class="list-unstyled text-white flex justify-space-between">
@@ -34,9 +35,9 @@
                     </ul>
                 </nav>
                 <div class="tab-hide desktop-hide">
-                    <div id="mobinav-open">
-                        <i class="fas fa-bars text-white h3"></i>
-                    </div>
+                    <button type="button" id="mobinav-open" class="unset" aria-label="Open menu">
+                        <i class="fas fa-bars text-white h3" aria-hidden="true"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -244,7 +245,7 @@
                     <p><em>Your content 3.</em></p>
                 </div>
                 <div>
-                    <img class="lozad" src="./assets/images/office/pexels-office-5.jpg" alt="office pic" srcset="">
+                    <img class="lozad" data-src="./assets/images/office/pexels-office-5.jpg" alt="office pic" width="640" height="426">
                 </div>
                 <div class="bg-c-green pd-lg">
                     <p>Your content 5.</p>
@@ -277,19 +278,19 @@
             </div>
             <div class="flex-mg-row mg-b-md">
                 <div class="flex-mg-col">
-                    <img src="./assets/images/office/pexels-office-4.jpg" alt="office pic" srcset="" class="mg-b-md lozad">
-                    <img src="./assets/images/office/pexels-office-3.jpg" alt="office pic" srcset="" class="mg-b-md lozad">
-                    <img src="./assets/images/office/pexels-office-7.jpg" alt="office pic" srcset="" class="lozad">
+                    <img data-src="./assets/images/office/pexels-office-4.jpg" alt="office pic" class="mg-b-md lozad" width="640" height="958">
+                    <img data-src="./assets/images/office/pexels-office-3.jpg" alt="office pic" class="mg-b-md lozad" width="640" height="853">
+                    <img data-src="./assets/images/office/pexels-office-7.jpg" alt="office pic" class="lozad" width="640" height="640">
                 </div>
                 <div class="flex-mg-dub-col">
-                    <img src="./assets/images/office/pexels-office-5.jpg" alt="office pic" srcset="" class="mg-b-md lozad">
-                    <img src="./assets/images/office/pexels-office-2.jpg" alt="office pic" srcset="" class="mg-b-md lozad">
-                    <img src="./assets/images/office/pexels-office-1.jpg" alt="office pic" srcset="" class="lozad">
+                    <img data-src="./assets/images/office/pexels-office-5.jpg" alt="office pic" class="mg-b-md lozad" width="640" height="426">
+                    <img data-src="./assets/images/office/pexels-office-2.jpg" alt="office pic" class="mg-b-md lozad" width="640" height="427">
+                    <img data-src="./assets/images/office/pexels-office-1.jpg" alt="office pic" class="lozad" width="640" height="426">
                 </div>
             </div>
             <div class="flex-row">
                 <div class="flex-col">
-                    <img src="./assets/images/office/pexels-office-6.jpg" alt="office pic" srcset="" class="lozad">
+                    <img data-src="./assets/images/office/pexels-office-6.jpg" alt="office pic" class="lozad" width="640" height="426">
                 </div>
             </div>
         </div>
@@ -391,9 +392,9 @@
                 <a href="/" class="h3 text-white mg-b-sm">Nav Item 3</a>
                 <a href="/" class="h3 text-white mg-b-sm">Nav Item 4</a>
             </div>
-            <div id="mobinav-close">
-                <i class="fas fa-times text-white h3"></i>
-            </div>
+            <button type="button" id="mobinav-close" class="unset" aria-label="Close menu">
+                <i class="fas fa-times text-white h3" aria-hidden="true"></i>
+            </button>
         </div>
     </main>
     <footer>
