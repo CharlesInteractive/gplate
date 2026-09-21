@@ -1,5 +1,5 @@
 html, body {
-    font-family: NunitoSans;
+    font-family: NunitoSans, $system-font-stack;
     font-weight: 500;
     font-size: 16px;
     line-height: 1;
@@ -146,7 +146,7 @@ ul {
     }
 }
 
-// force font aweseome to inherit colors cause they don't
+// force font awesome to inherit colors cause they don't
 .fa, .fas, .far, .fal, .fad, .fab {
     color: inherit;
 }
@@ -158,28 +158,28 @@ ul {
         font-size: 14px;
     }
   
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
+    h1, .h1,
+    h2, .h2,
+    h3, .h3,
+    h4, .h4,
+    h5, .h5 {
         margin-bottom: 10px;
     }
   
-    h1 {
+    h1, .h1 {
         font-size: 26px;
     }
   
-    h2 {
+    h2, .h2 {
         font-size: 18px;
     }
   
-    h3 {
+    h3, .h3 {
         font-size: 16px;
     }
   
-    h4,
-    h5,
+    h4, .h4,
+    h5, .h5,
     p,
     ul,
     ol {
@@ -235,27 +235,16 @@ ul {
     color: $green;
 }
 .text-red {
-    color: $red
+    color: $red;
 }
 .text-gray-light {
-    color: $gray-light
+    color: $gray-light;
 }
 .text-gray {
     color: $gray;
 }
 .text-black {
     color: $black;
-}
-
-.background-center {
-    background-position: center;
-}
-
-.background-size {
-    background-size: cover;
-}
-.background-repeat {
-    background-repeat: no-repeat;
 }
 
 .hero-height {

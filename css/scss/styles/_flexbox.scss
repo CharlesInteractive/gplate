@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // Flexbox
 .flex {
     display: flex;
@@ -101,7 +103,7 @@
 // Align
 .align-start,
 .align-left {
-    align-items: flex-start
+    align-items: flex-start;
 }
 
 .align-end,
@@ -186,7 +188,7 @@
 
 // shrink
 .flex-shrink-0 {
-    flex: 0;
+    flex-shrink: 0;
 }
 
 @include responsive($tab-break) {
@@ -218,7 +220,7 @@
 
     // shrink
     .md_flex-shrink-0 {
-        flex: 0;
+        flex-shrink: 0;
     }
 }
 
@@ -250,115 +252,23 @@
     }
 
     // shrink
-    .md_flex-shrink-0 {
-        flex: 0;
+    .sm_flex-shrink-0 {
+        flex-shrink: 0;
     }
 }
 
-
-// basis
-.flex-xs {
-    flex-basis: 50px;
-}
-
-.flex-sm {
-    flex-basis: 200px;
-}
-
-.flex-md {
-    flex-basis: 300px;
-}
-
-.flex-lg {
-    flex-basis: 400px;
-}
-
-.flex-xl {
-    flex-basis: 500px;
-}
-
-.flex-full {
-    flex-basis: 100%;
-}
-
-.flex-1\/3 {
-    flex-basis: 33.3333333333%;
-    flex-basis: 33.3333333333%;
-}
-
-.flex-1\/2 {
-    flex-basis: 50%;
-    flex-basis: 50%;
-}
-
-@include responsive($tab-break) {
-    .md_flex-xs {
-        flex-basis: 50px;
+// basis, generated from $sizes and $fractions in base/config
+// e.g. .flex-md, .flex-full, .flex-1/3, .md_flex-md
+@include at-breakpoints using ($bp) {
+    @each $size, $value in map.merge($sizes, (full: 100%)) {
+        .#{$bp}flex-#{$size} {
+            flex-basis: $value;
+        }
     }
 
-    .md_flex-sm {
-        flex-basis: 200px;
-    }
-
-    .md_flex-md {
-        flex-basis: 300px;
-    }
-
-    .md_flex-lg {
-        flex-basis: 400px;
-    }
-
-    .md_flex-xl {
-        flex-basis: 500px;
-    }
-
-    .md_flex-full {
-        flex-basis: 100%;
-    }
-
-    .md_flex-1\/3 {
-        flex-basis: 33.3333333333%;
-        flex-basis: 33.3333333333%;
-    }
-
-    .md_flex-1\/2 {
-        flex-basis: 50%;
-        flex-basis: 50%;
-    }
-}
-
-@include responsive($mobi-break) {
-    .sm_flex-xs {
-        flex-basis: 50px;
-    }
-
-    .sm_flex-sm {
-        flex-basis: 200px;
-    }
-
-    .sm_flex-md {
-        flex-basis: 300px;
-    }
-
-    .sm_flex-lg {
-        flex-basis: 400px;
-    }
-
-    .sm_flex-xl {
-        flex-basis: 500px;
-    }
-
-    .sm_flex-full {
-        flex-basis: 100%;
-    }
-
-    .sm_flex-1\/3 {
-        flex-basis: 33.3333333333%;
-        flex-basis: 33.3333333333%;
-    }
-
-    .sm_flex-1\/2 {
-        flex-basis: 50%;
-        flex-basis: 50%;
+    @each $fraction, $value in $fractions {
+        .#{$bp}flex-#{$fraction} {
+            flex-basis: $value;
+        }
     }
 }

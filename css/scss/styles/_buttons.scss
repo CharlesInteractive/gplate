@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .btn {
     border-radius: 25px;
     background: $primary-color;
@@ -13,7 +15,6 @@
     width: 100%;
     display: block;
     border: none;
-    border: 0;
     cursor: pointer;
     margin: 0 0 15px;
     line-height: 1;
@@ -21,26 +22,26 @@
     transition: background 250ms ease-out;
     &:hover,
     &:focus {
-        background: darken($primary-color, 10);
-        color: #fff;
+        background: color.adjust($primary-color, $lightness: -10%);
+        color: $white;
         text-decoration: none;
     }
   
     &:active {
-        background: darken($primary-color, 10);
+        background: color.adjust($primary-color, $lightness: -10%);
     }
     &.teal-button {
         background: $teal;
         color: $white;
         &:hover,
         &:focus {
-            background: darken($teal, 10);
-            color: #fff;
+            background: color.adjust($teal, $lightness: -10%);
+            color: $white;
             text-decoration: none;
         }
     
         &:active {
-            background: darken($teal, 10);
+            background: color.adjust($teal, $lightness: -10%);
         }
     }
     &.green-button {
@@ -48,13 +49,13 @@
         color: $white;
         &:hover,
         &:focus {
-            background: darken($green, 10);
-            color: #fff;
+            background: color.adjust($green, $lightness: -10%);
+            color: $white;
             text-decoration: none;
         }
     
         &:active {
-            background: darken($green, 10);
+            background: color.adjust($green, $lightness: -10%);
         }
     }
     &.red-button {
@@ -62,13 +63,13 @@
         color: $white;
         &:hover,
         &:focus {
-            background: darken($red, 10);
-            color: #fff;
+            background: color.adjust($red, $lightness: -10%);
+            color: $white;
             text-decoration: none;
         }
     
         &:active {
-            background: darken($red, 10);
+            background: color.adjust($red, $lightness: -10%);
         }
     }
     &.black-button {
@@ -76,13 +77,13 @@
         color: $white;
         &:hover,
         &:focus {
-            background: lighten($black, 10);
-            color: #fff;
+            background: color.to-gamut(color.adjust($black, $lightness: -10%), $method: clip);
+            color: $white;
             text-decoration: none;
         }
     
         &:active {
-            background: lighten($black, 10);
+            background: color.to-gamut(color.adjust($black, $lightness: -10%), $method: clip);
         }
     }
     &:last-child {
@@ -100,7 +101,13 @@ button.unset {
     background: none;
     color: inherit;
     border: none;
+    padding: 0;
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    // keep a visible focus ring for keyboard users
+    &:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+    }
 }

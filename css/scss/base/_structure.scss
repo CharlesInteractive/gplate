@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .wrapper {
     max-width: $wrapper;
     width: 100%;
@@ -80,8 +82,8 @@ $maxcols: 12; // Max grid columns
 		margin-left: -($margin);
 		flex-wrap: wrap;
 		.flex-col {
-			flex-basis: ($width / $i) - ($margin);
-			max-width: ($width / $i) - ($margin);
+			flex-basis: math.div($width, $i) - ($margin);
+			max-width: math.div($width, $i) - ($margin);
 			margin-left: $margin;
 			// max-width: ($unit * $i) + ($margin * ($i - 1));
 		}

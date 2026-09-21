@@ -10,3 +10,17 @@
         @content;
     }
 }
+
+// Output the content once unprefixed and once per responsive breakpoint,
+// passing the class prefix ("", "md_", "sm_") to the content block
+@mixin at-breakpoints {
+    @each $prefix, $res in $breakpoint-prefixes {
+        @if $res {
+            @include responsive($res) {
+                @content($prefix);
+            }
+        } @else {
+            @content($prefix);
+        }
+    }
+}

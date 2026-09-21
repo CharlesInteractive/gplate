@@ -14,12 +14,53 @@ $mobi-break: 550px;
 $tab-break: 850px;
 $mon-break: 1200px;
 
+// Breakpoint class prefixes, e.g. .md_pd-sm, .sm_pd-sm
+$breakpoint-prefixes: (
+    "": null,
+    "md_": $tab-break,
+    "sm_": $mobi-break
+);
+
+// Spacing scale used by padding and margin classes
+$spacing: (
+    xs: 10px,
+    sm: 15px,
+    md: 30px,
+    lg: 45px,
+    xl: 60px,
+    xxl: 90px,
+    none: 0
+);
+$spacing-sides: (
+    t: top,
+    b: bottom,
+    l: left,
+    r: right,
+    x: (left, right),
+    y: (top, bottom)
+);
+
+// Sizing scale used by width, height and flex-basis classes
+$sizes: (
+    xs: 50px,
+    mxs: 125px,
+    sm: 200px,
+    md: 300px,
+    lg: 400px,
+    xl: 500px,
+    xxl: 650px
+);
+$fractions: (
+    "1\\/3": 33.3333333333%,
+    "1\\/2": 50%
+);
+
 // Site wrappers 
 $wrapper: 1100px;
 $mid-wrapper: 900px;
 $small-wrapper: 700px;
 
-// Color Pallette
+// Color Palette
 $blue: #056cab;
 $teal: #145252;
 $green: #208000;
@@ -38,6 +79,6 @@ $subtertiary-color: $red;
 //site functions
 $danger-color: $red; // Bad color for errors, validation etc.
 $success-color: $green; // Good color for success etc.
-$info-color: $blue; // Good color for success etc.
-$warning-color: $red; // Good color for success etc.
+$info-color: $blue; // Neutral color for info messages etc.
+$warning-color: $red; // Color for warnings etc.
 $subtle-color: $gray; // Subtle color for subtle text
