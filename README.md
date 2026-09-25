@@ -4,6 +4,10 @@ Old school responsive boilerplate for web developers. Fully equiped with sass, j
 Preview: [gplate.blackiceinteractive.com/](https://gplate.blackiceinteractive.com/)
 
 ## Get Started
+Get on the right version of node with the included .nvmrc file:
+
+    nvm use
+    
 Going to need the [Grunt CLI](https://gruntjs.com/using-the-cli) installed globally if you don't already:
 
     sudo npm install -g grunt-cli
